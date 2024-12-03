@@ -2,8 +2,11 @@ name: Report generation
 
 on:
   push:
-    branches:
-    - "main"
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  paths:
+    - "report/**"
     
 jobs:
   Generate:
