@@ -10,10 +10,12 @@ name: Java CI with Gradle
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - "app/**"  # Trigger only when changes are made in the 'app' folder
   pull_request:
     branches: [ "master" ]
-  paths:
-    - "report/**"
+    paths:
+      - "app/**"  # Trigger on PRs affecting the 'app' folder
 
 jobs:
   build:

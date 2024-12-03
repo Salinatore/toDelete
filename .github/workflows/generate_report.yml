@@ -3,10 +3,12 @@ name: Report generation
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - "report/**"
   pull_request:
     branches: [ "master" ]
-  paths:
-    - "report/**"
+    paths:
+      - "report/**"
     
 jobs:
   Generate:
