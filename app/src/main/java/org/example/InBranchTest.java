@@ -1,7 +1,7 @@
 package org.example;
 
 /**
- * Useless class
+ * Useless class used to be down ghaishgads
  */
 public class InBranchTest {
     public boolean fail() {
